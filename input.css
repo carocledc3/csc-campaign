@@ -1,6 +1,110 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 
 @source not "./tailwindcss";
 @source not "./daisyui{,*}.mjs";
 
 @plugin "./daisyui.mjs";
+
+
+@theme {
+    --color-*: initial;
+    --color-white: oklch(0.9511 0.0103 261.79);
+    --color-salmon: oklch(0.7724 0.1392 7.98);
+    --color-pink: oklch(0.5743 0.2067 2.91);
+    --color-blue: oklch(0.2987 0.1568 265.55);
+    --color-gradienttest: linear-gradient(in oklch 90deg, #e93c81 0.0%, #081d7a 100.0%)
+    --text-xs: 10pt;
+    --text-sm: 12pt;
+    --text-md: 15pt;
+    --text-lg: 21pt;
+    --text-xl: 26pt;
+    --text-2xl: 32pt;
+    --text-3xl: 40pt;
+}
+
+html {
+    @apply bg-white
+}
+
+body {
+    @apply flex flex-col justify-center
+}
+
+p {
+    @apply my-4
+}
+
+ol {
+    @apply list-decimal list-inside
+}
+
+li {
+    @apply my-2
+}
+
+details, .collapse-content, p{
+  font-family: "M PLUS Code Latin", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.sixtyfour {
+  font-family: "Sixtyfour" !important;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-stretch: 10%;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}
+
+.detailscont, .pcontcont {
+    @apply max-w-full flex justify-center
+}
+
+details {
+    @apply rounded-none collapse-arrow max-w-2xl text-shadow-sm
+}
+
+.collapse-title {
+    @apply text-md
+}
+
+
+.bg-salmon {
+    @apply text-shadow-pink/50
+}
+
+.bg-pink{
+    @apply text-shadow-blue/75
+}
+
+.bg-blue{
+    @apply text-shadow-pink/50
+}
+.collapse-content {
+    @apply text-shadow-xs}
+h1 {
+    @apply text-blue text-shadow-sm text-shadow-pink/50 text-center my-4 text-lg
+}
+
+p {
+    @apply leading-6 text-sm
+}
+
+.pcont {
+    @apply my-0 max-w-2xl mx-4 justify-self-center-safe
+}
+
+.text-white {
+    @apply selection:bg-white selection:text-blue
+}
+
+h3 {
+    @apply text-center
+}
