@@ -90,7 +90,7 @@ details {
 .collapse-content {
     @apply text-shadow-xs}
 h1 {
-    @apply text-blue text-shadow-sm text-shadow-pink/50 text-center my-4 text-lg
+    @apply text-blue text-shadow-sm text-shadow-pink/50 text-center my-4 text-md sm:text-lg
 }
 
 p {
