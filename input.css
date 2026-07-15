@@ -43,7 +43,7 @@ li {
     @apply my-2
 }
 
-details, .collapse-content, p, span{
+details, .collapse-content, p, span, ul, ol{
   font-family: "M PLUS Code Latin", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
