@@ -43,7 +43,7 @@ li {
     @apply my-2
 }
 
-details, .collapse-content, p{
+details, .collapse-content, p, span{
   font-family: "M PLUS Code Latin", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -55,7 +55,7 @@ details, .collapse-content, p{
 .sixtyfour {
   font-family: "Sixtyfour" !important;
   font-optical-sizing: auto;
-  font-weight: 550;
+  font-weight: 700;
   font-stretch: 10%;
   font-style: normal;
   font-variation-settings:
@@ -103,6 +103,10 @@ p {
 
 .text-white {
     @apply selection:bg-white selection:text-blue
+}
+
+.text-blue {
+    @apply selection:bg-pink selection:text-white
 }
 
 h3 {
