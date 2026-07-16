@@ -10,10 +10,9 @@
 @theme {
     --color-*: initial;
     --color-white: oklch(0.9511 0.0103 261.79);
-    --color-salmon: oklch(0.7724 0.1392 7.98);
+    --color-salmon: oklch(0.7883 0.1155 0.62);
     --color-pink: oklch(0.5743 0.2067 2.91);
     --color-blue: oklch(0.2987 0.1568 265.55);
-    --color-gradienttest: linear-gradient(in oklch 90deg, #e93c81 0.0%, #081d7a 100.0%)
     --text-xs: 10pt;
     --text-sm: 12pt;
     --text-md: 15pt;
