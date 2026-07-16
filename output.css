@@ -8,6 +8,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
     --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-lg: 32rem;
     --container-2xl: 42rem;
     --text-sm: 12pt;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -1424,6 +1426,21 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+  .-mt-2 {
+    margin-top: calc(var(--spacing) * -2);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .-mb-2 {
+    margin-bottom: calc(var(--spacing) * -2);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .badge {
     @layer daisyui.l1.l2.l3 {
       display: inline-flex;
@@ -1483,8 +1500,56 @@
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
+  .h-auto {
+    height: auto;
+  }
+  .max-h-8 {
+    max-height: calc(var(--spacing) * 8);
+  }
+  .max-h-10 {
+    max-height: calc(var(--spacing) * 10);
+  }
+  .max-h-20 {
+    max-height: calc(var(--spacing) * 20);
+  }
+  .max-h-30 {
+    max-height: calc(var(--spacing) * 30);
+  }
+  .min-h-4 {
+    min-height: calc(var(--spacing) * 4);
+  }
+  .min-h-5 {
+    min-height: calc(var(--spacing) * 5);
+  }
+  .min-h-10 {
+    min-height: calc(var(--spacing) * 10);
+  }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-10 {
+    max-width: calc(var(--spacing) * 10);
+  }
+  .max-w-15 {
+    max-width: calc(var(--spacing) * 15);
+  }
+  .max-w-16 {
+    max-width: calc(var(--spacing) * 16);
+  }
+  .max-w-20 {
+    max-width: calc(var(--spacing) * 20);
+  }
+  .max-w-30 {
+    max-width: calc(var(--spacing) * 30);
+  }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1532,6 +1597,9 @@
   .list-disc {
     list-style-type: disc;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-col-reverse {
     flex-direction: column-reverse;
   }
@@ -1543,6 +1611,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-self-center {
+    justify-self: center;
   }
   .border {
     border-style: var(--tw-border-style);

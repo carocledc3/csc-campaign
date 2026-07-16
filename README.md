@@ -10,4 +10,4 @@ Carlos Romeo is endorsed by the Sinag Partylist:
 
 Carlos Romeo also endorses the following candidates to the University Student Council:
 - **Sherline Balla** for **USC President**
-- **Cherry Doyaoen** for **USC Senator, CITCS**
+- **Cherry Doyaoen** and **Verah Dulay** for **USC Senator, CITCS**
